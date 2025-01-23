@@ -1,0 +1,65 @@
+Portals
+Rendering components outside the DOM hierarchy
+
+Refs and the DOM
+Using useRef for DOM manipulation
+
+Forwarding refs
+Higher-Order Components (HOC)
+What are HOCs and why use them?
+Creating and using HOCs
+
+Render Props
+Concept and use cases
+Implementing render props in components
+
+4. Ecosystem and Tooling
+
+Working with APIs
+Fetching data using fetch and axios
+Consuming REST APIs and GraphQL APIs
+Handling loading and error states
+
+Testing in React
+Unit testing with Jest and React Testing Library
+End-to-end testing with Cypress
+
+TypeScript with React
+Introduction to TypeScript
+Type-checking props and state
+Interfaces and types
+
+Build Tools
+Webpack and Babel overview
+Create React App (CRA)
+Vite and alternatives to CRA
+
+5. Expert-Level Topics
+
+Server-Side Rendering (SSR)
+Introduction to SSR
+Using frameworks like Next.js for SSR
+
+Static Site Generation (SSG)
+Benefits of SSG
+Implementing SSG with Next.js
+
+Progressive Web Apps (PWA)
+Creating PWAs with React
+Service workers and offline capabilities
+
+State Management Alternatives
+Exploring advanced libraries like Recoil, Zustand
+Comparing Redux vs. Context API vs. Zustand
+
+Advanced Performance Optimization
+Code splitting advanced patterns
+Analyzing and reducing bundle size
+
+React Server Components
+What are server components?
+How server and client components work together
+
+Monorepos and Micro-Frontend Architecture
+Introduction to Monorepos (using Nx or Turborepo)
+Implementing micro-frontends in React
