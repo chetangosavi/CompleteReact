@@ -6,3 +6,8 @@ React:
 Initialising React Project :
 
         1. npm init -y   --> -y is to avoid questions
+
+Initialising React Project Using Vite :
+
+        npm create vite@latest
+        npm install

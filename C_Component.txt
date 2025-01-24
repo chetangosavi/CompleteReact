@@ -1,0 +1,41 @@
+Component:
+    - A React component is a reusable piece of code that creates a part of a user interface (UI). 
+      Components are the fundamental building blocks of a React app. 
+    - Component is nothing but a function
+
+Types of Component :
+
+        1. functional Component:
+            - Functional components are simpler and preferred for most use cases. They are JavaScript functions 
+              that return React elements. With the introduction of React Hooks, functional components can also 
+              manage state and lifecycle events
+        Syntax :
+
+            const ComponentName = (props) => {
+                return (
+                    <div>
+                        some code ......
+                    </div>
+                );
+            }
+            export default ComponentName;
+
+        2. class Components:
+           - Class components are ES6 classes that extend React.Component. They include additional features like 
+             state management and lifecycle methods.
+
+                - State Management: State is managed using the this.state property.
+                - Lifecycle Methods: Includes methods like componentDidMount, componentDidUpdate, etc.
+        Syntx :
+
+            class Greet extends React.Component {
+                render() {
+                    return <h1>Hello, {this.props.name}!</h1>;
+                }
+            }
+
+
+
+Props : 
+
+High Order Component :
