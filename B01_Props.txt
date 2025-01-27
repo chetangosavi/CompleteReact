@@ -1,0 +1,28 @@
+Props:
+    In JavaScript, especially in the context of React, props (short for properties) are a way to pass data 
+    from one component to another. They allow you to make components reusable and dynamic by enabling customization 
+    through external input.
+
+    - from Parent to child component only(one way data Binding)
+    
+    const Comp = (props)=>{
+        console.log(props) --> returns an object
+    }
+
+    Accessing Props:
+            supp - props{
+                id:1,
+                name:"chetan",
+                city:"Pune"
+            }
+
+            conosle.log({props.name})
+
+spread operator:
+    The spread operator (...) in JavaScript is a convenient syntax to expand elements of an iterable 
+    (like an array, string, Map, or Set) or object properties into individual elements. It’s commonly 
+    used for copying, merging, and passing data in a concise and readable way
+
+    spread operator only works on iterable or shows error
+
+    Object.entries(prop) --> Converts each entry into seperate Array

@@ -1,5 +1,6 @@
 import React from "react";
 const Myinfo = (props) => {
+  console.log(Object.entries(props))
   return (
     <div>
       <h1>{props.name}</h1>

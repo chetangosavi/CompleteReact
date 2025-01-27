@@ -1,0 +1,39 @@
+JSX :
+
+    - JavaScript Syntax XML
+    - Its an Extension to JavaScript Syntax
+
+    need ?
+    - Its not a necessity we can write react without JSX but it makes it easier to write 
+    
+
+    Ex: React without jsx:
+
+            import React from "react";
+            import ReactDOM from "react";
+
+            const App = () => {
+                return React.createElement(
+                    "div",
+                    {className="greeting"},
+                    React.createElement("h1",{},"Hello World")
+                )
+            }
+            ReactDOM.render(React.createElement(APP),document.getElementById("root"))
+
+    EX: React with jsx:
+
+        const APP = () => {
+            return(
+                <div>"Hello World"</div>
+            );
+        }
+
+        export defualt APP;
+
+    Naming Difference :
+
+            class --> className
+            for --> htmlFor
+            onclick --> onClick 
+            tabindex --> tabIndex
