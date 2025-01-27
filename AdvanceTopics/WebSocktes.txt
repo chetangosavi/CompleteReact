@@ -1,1 +1,21 @@
 WebSocket:
+    - WebSocket is a computer cummunication protocol providing full duplex communication channel over a single
+      TCP connection
+    - The socket protocol was standardized by the IETF as RFC 6455 in 2011
+
+Key Features of WebSockets:
+    - Full-Duplex Communication: Both the client and the server can send and receive messages independently of 
+      each other, unlike HTTP, where the client must always initiate a request.
+    - Persistent Connection: Once established, the connection remains open, reducing the overhead of 
+      repeated HTTP requests and responses.
+    - Real-Time Updates: Ideal for scenarios that require instant updates, such as chat apps, stock 
+      price tickers, online gaming, and collaborative tools.
+
+How It Works:
+    - Handshake: The WebSocket protocol starts with an HTTP request from the client to the server to establish 
+      the connection. If the server accepts, the protocol switches from HTTP to WebSocket.(UPGRADE)
+    - Communication: After the handshake, the connection is established, and both parties can exchange 
+      messages in real time using a lightweight format (usually JSON or binary data).
+    - Closure: Either the client or server can close the connection when it's no longer needed.
+
+To Impliment web sockets into Node js we have liabrary knows as socket.io   
