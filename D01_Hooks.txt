@@ -56,5 +56,56 @@ Hooks In React JS :
     Effect Hooks:
 
             useEffect():
+                what is side effect ?
+                -> it is a way to reach outside and synchronise with external system
+                -> In React, a side effect refers to any operation that interacts with the outside world or affects something 
+                   outside the function's scope.
 
                     syntax: 
+                            useEffect(()=>{},[])
+                            - takes a function and dependecy array
+
+                    EX :
+                            const [count, setCount] = useState(0);
+
+                            useEffect(()=>{
+                                return document.title = `You clicked ${count} Times`
+                            },[count])
+                                \
+                                as soon as count changes it will run useEffect()
+
+
+            Two Kinds of side Effects :
+
+                1. Event Based(button click);
+                2. Render Based(fetching data);
+
+            Difference Between useEffect() and useLayoutEffect() ?
+               - useEffect()             useLayoutEffect()
+                asynchronous          |       synchronous   
+                runs after UI paint   |   runs before UI paint
+                for most side Effects |   for limited side Effects
+
+
+    ref Hoooks:
+
+            useRef(): Stores values just like useState but useRef is mutable(it can be changed/modified directly)
+            - where as useState cannot be modified directly(immutable)
+
+            syntx :
+
+                    const count = useRef(initalValue);
+                    count.current --> using we can access value of variable
+
+    Performance Hooks:
+
+        useMemo():
+            - uses memoisation to remember values
+            - hook made to improve apps/reacts Performance
+            - calculate values only when dependecy changes
+            - good for expensive computation
+
+        Memoization : is an optimization technique that stores the result of expensive function calls and returns 
+            the cached result when the same inputs occur again.
+            In React, memoization is used to avoid unnecessary re-renders and improve performance. React provides 
+            several built-in hooks and utilities for memoization:
