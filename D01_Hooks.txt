@@ -1,0 +1,60 @@
+Hooks In React JS :
+
+        1. State Management Hooks :
+                useState();
+                useReduce();
+
+        2. Effect Hooks:
+                useEffect();
+                useLayoutEffect();
+
+        3. Performance Hooks:
+                useMemo();
+                useCallback();
+
+        4. Context Hooks:
+                useContext();
+
+        5. Transition Hooks:
+                useTransition();
+                useDifferedVlaues();
+
+        6. Random Hooks:
+                useDebugVlaue();
+                useId()
+
+        7. ref Hooks:
+                useRef();
+                useImperativeHandle();
+
+        8. React 19 Hooks :
+                useFormStatus();
+                useFormState();
+                useOptimistic();
+                use();
+
+    State Management Hooks :
+
+            useState():
+
+                    syntax :
+
+                            const [variable,setVariable] = useState(inital value);
+                                             \
+                                        function to set value for variable;
+
+            useReduce():
+
+                    syntax :
+
+                            const [variable,dispatch] = useReduce(reduceFunction,initalValue);
+
+                            - dispatch() : function on call it runs reduceFunction and send data to an call to an action
+                            - returns varibale and new function called dispatch
+                            - used for more complex state Management
+
+    Effect Hooks:
+
+            useEffect():
+
+                    syntax: 

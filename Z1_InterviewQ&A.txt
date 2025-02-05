@@ -1,0 +1,42 @@
+1. What is impure function with ex?
+-> An impure function is a function that produces side effects or depends on external state, 
+   meaning its output is not solely determined by its input parameters. This makes impure functions 
+   unpredictable and harder to test.
+
+   let count = 0;
+
+   const increment = ()=>{
+    count++;
+    return count;
+   }
+
+   console.log(increment()); //1
+   console.log(increment()); //2  --> depends on external state
+
+   Now lets see Pure Function;
+
+   const addition = (a,b) => a + b;  this is pure function
+   console.log(addition(2,3)) --> this will always result 5
+_______________________________________________________________________________________________
+
+2. What is function currying ?
+-> Currying is a technique in functional programming where a function is transformed into 
+   a sequence of functions, each taking a single argument. Instead of taking multiple arguments 
+   at once, a curried function takes them one at a time and returns a new function until all 
+   arguments are provided.
+
+   Ex.
+
+    function add(a,b,c){
+        return a+b+c;
+    }
+
+    with currying :
+
+    function add(a){
+        return function (b){
+            return function (c){
+                return a+b+c;
+            }
+        }
+    }
