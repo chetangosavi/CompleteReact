@@ -1,0 +1,8 @@
+lifecycle of Component :
+    -> The React component lifecycle refers to the different stages a component goes through from its creation to 
+    its removal from the DOM. It consists of three main phases:
+
+    + Phases :
+        1. Mounting (Component Creation)
+        2. Updating (Re-rendering)
+        3. Unmounting (Component Removal)
