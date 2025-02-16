@@ -6,3 +6,5 @@ lifecycle of Component :
         1. Mounting (Component Creation)
         2. Updating (Re-rendering)
         3. Unmounting (Component Removal)
+1. Mounting Phase (Component Creation)
+This phase occurs when a component is first created and added to the DOM. The following lifecycle methods are called in order:
